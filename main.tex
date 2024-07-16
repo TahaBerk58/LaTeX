@@ -1,0 +1,70 @@
+\document{article}
+\usepackage{graphicx, xcolor}
+
+\title{} %Başlık
+\author{} %Yazar
+\thanks{text} %Sorumlu Yazar
+\date{text} %Tarih
+
+\begin{document}
+
+\maketitle
+
+\section{Giriş} %Giriş başlığı oluşturur.
+
+Buraya text yazılır.
+
+\textit{text} %İtalik yazım
+\textbf{text} %Bold yazım
+\textcolor{red}{text}
+\underline{text} %Altı çizgili
+\emph{text} %Metin vurgusu
+\newline{text} %Yeni satıra geç
+
+\section{Düzenleme}
+
+Text...
+
+\begin{itemize} %Noktalı madde
+    \item A
+    \item B
+    \item C
+\end{itemize}
+
+\begin{enumerate}
+    \item A
+    \item B
+    \item C
+\end{enumerate}
+
+\subsection{Şekil Ekleme}
+
+\begin{Figure}[h!] %H resmi kodu yazdığın here koyar.
+    \centering
+    \includegraphics[width=0.6 \textwidth]{"Dosya Yolu"}
+    \caption{YTÜ}
+    \label{fig:ytu_logo}
+\end{figure}
+
+Text... \ref{fig:ytu_logo}
+
+\subsection{Math}
+
+Cümle içinde denklem kullanımı $E=mc^2$ \ref{eq:kütle}
+
+\begin{equation} \label{eq:kütle}
+    E=mc^2
+\end{equation}
+
+\subsection{Tablo Eklene} \label{sec:tablo}
+
+\begin{center}
+    \begin{tabular}{c, c, c}
+        cell 1 & cell 2 & cell 3 \\
+        cell 4 & cell 5 & cell 6 \\
+        cell 7 & cell 8 & cell 9 \\
+    \end{tabular}
+\end{center}
+
+
+\end{document}
